@@ -1,0 +1,40 @@
+﻿@{
+    ViewBag.Title = "Sign Up";
+}
+
+
+<form action="" method="post">
+    <div class="container">
+        <h1>Sign Up</h1>
+        <p>Already have an account?<a style="color:dodgerblue" href="/Home/SignIn">Sign in</a></p>
+        <hr>
+
+        <label for="email"><b>Email</b></label>
+        <br />
+        <input type="text" placeholder="Enter Email" name="Email" required>
+        <br />
+        <br />
+        <label for="password"><b>Password</b></label>
+        <br />
+        <input type="password" placeholder="Enter Password" name="Password" required>
+        <br />
+        <br />
+        <label for="secret"><b>Secret</b></label>
+        <br />
+        <input type="text" placeholder="Enter Secret" name="secret" required>
+        <br />
+        <br />
+
+        <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+        <div class="clearfix">
+            <button type="submit" class="signupbtn">Sign Up</button>
+        </div>
+    </div>
+</form>
+
+@if (ViewBag.Message != null)
+{
+    <h5 style="color:red">1.Please Enter A valid Email Id</h5>
+    <h5 style="color:red">2.Password length sholud be between 6 to 50</h5>
+}

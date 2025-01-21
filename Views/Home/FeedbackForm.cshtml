@@ -1,0 +1,26 @@
+﻿@{
+    ViewBag.Title = "Feedback";
+}
+<h2>@ViewBag.Title.</h2>
+
+<h3>Hi @ViewBag.loggedInEmail</h3>
+<form method="post">
+    <div align="justify">
+        <p>What Would you like to share with?</p>
+        <textarea autofocus id="UserComment" name="UserComment" rows="10" cols="40" colspan=""></textarea>
+    </div>
+
+    <div> <button type="submit" class="btn success">Submit</button></div>
+</form>
+<br />
+<iframe style="border: 1px solid black" width="1000" height="400" src="/Home/UserComments">
+</iframe>
+<style>
+</style>
+<br />
+<div>
+    <a style="color:black" href="/Home/Index">
+        <button class="btn success">Logout</button>
+    </a>
+</div>
+

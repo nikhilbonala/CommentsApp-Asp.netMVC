@@ -1,0 +1,27 @@
+﻿@{
+    ViewBag.Title = "Sign In";
+}
+<form action="" method="post">
+    <div class="container">
+        <h1>Sign In</h1>
+        <p>Don't' have an account?<a style="color:dodgerblue" href="/Home/Index">Sign Up</a></p>
+        <hr>
+
+        <label for="email"><b>Email</b></label>
+        <br />
+        <input type="text" placeholder="Enter Email" name="Email" required>
+        <br />
+        <br />
+        <label for="password"><b>Password</b></label>
+        <br />
+        <input type="password" placeholder="Enter Password" name="Password" required>
+        <br />
+        <br />
+
+        <p><a href="/Home/ForgotPassword" style="color:dodgerblue">Forgot your password?</a></p>
+
+        <div class="clearfix">
+            <button  type="submit" class="signupbtn">Sign In</button>
+        </div>
+    </div>
+</form>

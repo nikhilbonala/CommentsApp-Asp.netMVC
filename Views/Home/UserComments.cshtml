@@ -1,0 +1,21 @@
+﻿
+@{
+    Layout = null;
+}
+
+<h2>Comments</h2>
+<form method="post">
+    <div align="right"><button type="submit" class="btn-primary">Filter</button></div>
+</form>
+<div>
+    <table>
+        @foreach (var item in ViewBag.userComments)
+        {
+            <tr>        <td>@item.Email</td>      <td style="border: 1px solid black; padding: 10px 10px 10px 10px;"> @item.UserComment</td>      </tr>
+
+        }
+    </table>
+
+</div>
+
+
